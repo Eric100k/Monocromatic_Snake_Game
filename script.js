@@ -13,9 +13,12 @@ function criarBG() {
 }
 
 function criarcobrinha() {
-    for(i = 0;i < snake.length; i++){
+    for(i = 0; i < snake.length; i++){
+        context.fillStyle = "darkgray";
+        context.fillRect(snake[i].x, snake[i].y, box, box)
 
     }
 }
 
 criarBG();
+criarcobrinha();
